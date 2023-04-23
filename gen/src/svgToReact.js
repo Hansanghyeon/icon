@@ -4,7 +4,8 @@ const svgToReact = async (svg, options) => {
   const { componentName, ...rest } = options;
   const code = await transform(svg, {
     replaceAttrValues: {
-      '#4B515B': 'currentColor'
+      '#4B515B': 'currentColor',
+      '#000000': 'currentColor',
     },
     expandProps: 'end',
     icon: true,

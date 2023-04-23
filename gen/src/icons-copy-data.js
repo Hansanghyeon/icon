@@ -41,8 +41,8 @@ const iconsCopyData = (ov) => {
         data: {
           var_name: componentName,
           jsx: await svgToReact(svgFile, {componentName, template}),
-          svg: svgFile.replace('#4B515B', 'currentColor'),
-          import: `import { ${componentName} } from '@hansanghyeon/icon'\n<${componentName} />`,
+          svg: svgFile.replace('#4B515B', 'currentColor').replace('#000000', 'currentColor'),
+          import: `import { ${componentName} } from '@hyeon/icon'\n<${componentName} />`,
         }
       }
     }),

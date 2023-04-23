@@ -5,8 +5,9 @@
   "license": "MIT",
   "repository": "https://github.com/hansanghyeon/icon",
   "scripts": {
-    "build": "rm -r ../app/src/components && plop --plopfile ./plopfile.js",
-    "generate": "rm -r ../app/src/components && plop --plopfile ./plopfile.js",
+    "clean": "rm -r ../app/src/components",
+    "build": "plop --plopfile ./plopfile.js",
+    "generate": "plop --plopfile ./plopfile.js",
     "gen": "yarn generate"
   },
   "devDependencies": {
