@@ -22,7 +22,6 @@ const svgToReact = async (svg, options) => {
       "endOfLine": "lf"
     },
     typescript: true,
-    jsxRuntime: 'automatic',
     ...rest,
   }, {
     componentName,
