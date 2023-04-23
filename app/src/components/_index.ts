@@ -1,2 +1,2 @@
-export * from './email-svgrepo-com'
+export * from './email-384'
 export * from './github-142'
