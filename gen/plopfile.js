@@ -1,7 +1,7 @@
 import path from 'path'
-import icons from './icons.js'
-import iconsCopyData from './icons-copy-data.js'
-import f__dirname from './__dirname.js'
+import icons from './src/icons.js'
+import iconsCopyData from './src/icons-copy-data.js'
+import f__dirname from './src/__dirname.js'
 const __dirname = f__dirname(import.meta.url)
 
 // plopfile.js
@@ -14,8 +14,8 @@ export default async function (
     prompts: [],
     actions: await Promise.all(icons({
       type: 'add',
-      path: path.join(__dirname, '../lib/components/[[filename]]'),
-      templateFile: '_templates/icons.hbs',
+      path: path.join(__dirname, '../app','src/components/[[filename]]'),
+      templateFile: 'templates/icons.hbs',
     }))
   })
   
@@ -24,8 +24,8 @@ export default async function (
     prompts: [],
     actions: await Promise.all(iconsCopyData({
       type: 'add',
-      path: path.join(__dirname, '../lib/components/[[filename]]'),
-      templateFile: '_templates/icons-copy-data.hbs',
+      path: path.join(__dirname, '../app','src/components/[[filename]]'),
+      templateFile: 'templates/icons-copy-data.hbs',
     }))
   })
 };

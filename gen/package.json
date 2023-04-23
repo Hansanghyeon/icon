@@ -1,0 +1,19 @@
+{
+  "name": "icon-generate",
+  "version": "1.0.0",
+  "type": "module",
+  "license": "MIT",
+  "repository": "https://github.com/hansanghyeon/icon",
+  "scripts": {
+    "build": "rm -r ../app/src/components && plop --plopfile ./plopfile.js",
+    "generate": "rm -r ../app/src/components && plop --plopfile ./plopfile.js",
+    "gen": "yarn generate"
+  },
+  "devDependencies": {
+    "@svgr/core": "^6.5.1",
+    "escape-html": "^1.0.3",
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
+    "plop": "^3.1.1"
+  }
+}

@@ -14,8 +14,8 @@ const files = fs.readdirSync(path.join(__dirname, `../assets/`));
  * @returns [
  *  {
  *    type: 'add',
- *    path: path.join(__dirname, '../lib/components/파일이름'),
- *    templateFile: '_templates/icons.hbs',
+ *    path: path.join(__dirname, '../src/components/파일이름'),
+ *    templateFile: 'templates/icons.hbs',
  *    data: {
  *      code: 'export const Icon = () => <svg>...</svg>'
  *    }

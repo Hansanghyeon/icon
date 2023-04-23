@@ -18,8 +18,8 @@ ${variables.jsx}
  * @returns [
  *  {
  *    type: 'add',
- *    path: path.join(__dirname, '../lib/components/파일이름'),
- *    templateFile: '_templates/icons.hbs',
+ *    path: path.join(__dirname, '../src/components/파일이름'),
+ *    templateFile: 'templates/icons.hbs',
  *    data: {
  *      svg: 'export const Icon = () => <svg>...</svg>',
  *      jsx: '',
@@ -54,7 +54,7 @@ const iconsCopyData = (ov) => {
       ovv = ovv.replace('[[filename]]', '_index-data.ts');
       return ovv;
     }),
-    templateFile: '_templates/icons.hbs',
+    templateFile: 'templates/icons.hbs',
     data: {
       code: fp.compose(
         fp.map(v => `export * from './${v.replace('.svg', '-data')}'`),
