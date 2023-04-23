@@ -1,6 +1,6 @@
 {
-  "name": "react-ts-lib",
-  "version": "1.0.0",
+  "name": "@hyeon/icon",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -34,5 +34,9 @@
   },
   "peerDependencies": {
     "react": "^17.0.2"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   }
 }
