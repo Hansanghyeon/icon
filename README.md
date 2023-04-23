@@ -1,4 +1,8 @@
-## Generator
+## app (App)
+
+[sidv93/react-ts-lib: Component library setup with React, Typescript and Rollup](https://github.com/sidv93/react-ts-lib) rollup 보일러플레이트를 사용해서 아이콘 jsx를 라이브러리화
+
+## gen (Generator)
 
 아이콘은 항시 바뀔 수있고 원본은 SVG 파일이기 때문에 SVG 파일을 통해서 react 컴포넌트를 만들 수 있는 자동화를 구축
 
